@@ -31,3 +31,11 @@ const count = arr3.reduce((accumulator, currentValue) => {
 }, {})
 
 console.log(count)
+
+// 120912번 문제 접근 중
+function solution(array) {
+  // 매개변수로 받은 배열을 사용하고, 정렬 후 그 값을 반환
+  var answer = array.sort((a, b) => a - b)
+  // 정렬된 배열을 반환
+  return answer
+}
