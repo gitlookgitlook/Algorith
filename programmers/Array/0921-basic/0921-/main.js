@@ -37,10 +37,17 @@ let sumArray = array2.reduce((acc, cur) => {
   return acc + cur
 })
 console.log(sumArray)
+
 // 4. 문자열 길이 배열 (map 사용)
 // 문제: 문자열 배열이 주어졌을 때, 각 문자열의 길이를 요소로 하는 새 배열을 반환하세요.
 // 입력 예: ["apple", "banana", "cherry"]
 // 출력 예: [5, 6, 6]
+
+let fruits = ["apple", "banana", "cherry"]
+let fruitsLength = fruits.map((fruit) => {
+  return fruit.length
+})
+console.log(fruitsLength)
 
 // 5. 배열 평탄화 (flat 사용)
 // 문제: 2차원 배열을 1차원 배열로 평탄화하세요.
