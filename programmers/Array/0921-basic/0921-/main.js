@@ -47,12 +47,23 @@ let fruits = ["apple", "banana", "cherry"]
 let fruitsLength = fruits.map((fruit) => {
   return fruit.length
 })
-console.log(fruitsLength)
+console.log(fruitsLength) // [5, 6, 6]
+console.log(fruits.length) // 3
 
-// 5. 배열 평탄화 (flat 사용)
+// 5. 배열 평탄화 (flat 사용) // 중첩된 배열 구조를 단일 레벨로 만들어줌
 // 문제: 2차원 배열을 1차원 배열로 평탄화하세요.
 // 입력 예: [[1, 2], [3, 4], [5, 6]]
 // 출력 예: [1, 2, 3, 4, 5, 6]
+
+let array3 = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+]
+
+let flatArray = array3.flat() // 매개변수로 depth, 기본값은 1 - 중첩된 배열 구조를 얼마나 깊이 평탄화 할지 지정하는 깊이, 많을 경우엔 Infinity
+console.log(array3) // [Array(2), Array(2), Array(2)]
+console.log(flatArray) // [1, 2, 3, 4, 5, 6]
 
 // 6. 특정 요소 찾기(find 사용)
 // 문제: 주어진 숫자 배열에서 10보다 큰 첫 번째 요소를 찾으세요.
