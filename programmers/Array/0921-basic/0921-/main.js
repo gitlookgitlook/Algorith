@@ -66,9 +66,17 @@ console.log(array3) // [Array(2), Array(2), Array(2)]
 console.log(flatArray) // [1, 2, 3, 4, 5, 6]
 
 // 6. 특정 요소 찾기(find 사용)
+// array.find(): 자바스크립트에서 배열 내에서 주어진 조건을 만족하는 첫 번째 요소를 찾고 반환하는 메서드, 배열의 각 요소에 대해 콜백 함수를 실행하고, 콜백함수가 true를 반환하는 첫 번째 요소를 반환함.
+
 // 문제: 주어진 숫자 배열에서 10보다 큰 첫 번째 요소를 찾으세요.
 // 입력 예: [1, 5, 12, 8, 15, 3]
 // 출력 예: 12
+let array4 = [1, 5, 12, 8, 15, 3]
+let findArray = array4.find((number) => {
+  return number > 10
+})
+console.log(array4) // [1, 5, 12, 8, 15, 3]
+console.log(findArray) // 12
 
 // 7. 배열 정렬 (sort 사용)
 // 문제: 주어진 숫자 배열을 오름차순으로 정렬하세요.
