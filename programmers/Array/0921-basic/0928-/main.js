@@ -1,9 +1,28 @@
 // 문제 1: 배열 합 구하기(reduce() 사용)
 // let numbers = [1, 2, 3, 4, 5];  // 결과: 15
+let numbers1 = [1, 2, 3, 4, 5]
+let newNumbers1 = numbers1.reduce((acc, cur) => {
+  return acc + cur
+})
+
+console.log(numbers1) // [1, 2, 3, 4, 5]
+console.log(newNumbers1) // 15
 
 // 문제 2: 배열 중 최대값 찾기(Math.max() + apply() 또는 reduce() 사용)
 // let numbers = [10, 3, 76, 34, 23];  // 결과: 76
-
+let number2 = [10, 3, 76, 34, 23]
+// 1. 내가 푼 방법
+let maxNumber1 = number2.reduce((acc, cur) => {
+  if (acc >= cur) {
+    return acc
+  } else {
+    return cur
+  }
+})
+console.log(maxNumber1) // 76
+// 2. 제시해준 방법
+let maxNumber2 = number2.reduce((acc, cur) => Math.max(acc, cur))
+console.log(maxNumber2) // 76
 // 문제 3: 짝수만 걸러내기(filter() 사용)
 // let numbers = [1, 2, 3, 4, 5, 6, 7, 8];  // 결과: [2, 4, 6, 8]
 
