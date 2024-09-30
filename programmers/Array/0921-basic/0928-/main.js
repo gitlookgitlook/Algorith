@@ -36,6 +36,11 @@ console.log(numbers3) // [1, 2, 3, 4, 5, 6, 7, 8]
 console.log(evenNumbers) // [2, 4, 6, 8]
 // 문제 4: 배열 뒤집기 (reverse() 사용)
 // let words = ["apple", "banana", "cherry"];  // 결과: ["cherry", "banana", "apple"]
+let words = ["apple", "banana", "cherry"]
+// array.reverse()는 괄호 안에 아무것도 넣지 않음 + 원본배열을 직접 변형함 -> 복사본을 만들어두면 좋음
+let copyWords = [...words]
+copyWords.reverse()
+console.log(copyWords) // ['cherry', 'banana', 'apple']
 
 // 문제 5: 배열에서 중복 제거(Set 사용)
 // let items = [1, 2, 2, 3, 3, 4, 5, 5];  // 결과: [1, 2, 3, 4, 5]
