@@ -40,10 +40,18 @@ let words = ["apple", "banana", "cherry"]
 // array.reverse()는 괄호 안에 아무것도 넣지 않음 + 원본배열을 직접 변형함 -> 복사본을 만들어두면 좋음
 let copyWords = [...words]
 copyWords.reverse()
+
 console.log(copyWords) // ['cherry', 'banana', 'apple']
 
 // 문제 5: 배열에서 중복 제거(Set 사용)
 // let items = [1, 2, 2, 3, 3, 4, 5, 5];  // 결과: [1, 2, 3, 4, 5]
+let items = [1, 2, 2, 3, 3, 4, 5, 5]
+let uniqueItems = [...new Set(items)]
+
+console.log(items) // [1, 2, 2, 3, 3, 4, 5, 5]
+console.log(uniqueItems) // [1, 2, 3, 4, 5]
+
+// Set은 JS에서 제공하는 객체 타입, 주요 용도는 중복 없는 고유한 값들의 집합을 관리하는 것
 
 // 문제 6: 배열 내 특정 값 찾기 (find() 또는 indexOf() 사용)
 // let items = ["apple", "banana", "cherry"];
