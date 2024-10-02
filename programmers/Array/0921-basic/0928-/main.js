@@ -54,8 +54,27 @@ console.log(uniqueItems) // [1, 2, 3, 4, 5]
 // Set은 JS에서 제공하는 객체 타입, 주요 용도는 중복 없는 고유한 값들의 집합을 관리하는 것
 
 // 문제 6: 배열 내 특정 값 찾기 (find() 또는 indexOf() 사용)
-// let items = ["apple", "banana", "cherry"];
+// let inventory = ["apple", "banana", "cherry"];
 // let target = "banana";  // 결과: 1
+
+let inventory = ["apple", "banana", "cherry"]
+
+let target = inventory.find((fruit) => {
+  return fruit == "banana"
+})
+
+console.log(inventory) // ['apple', 'banana', 'cherry']
+console.log(target) // banana // find()는 조건을 만족하는 요소 자체를 반환해줌(배열로 반환해주지 않음)
+
+let target2 = inventory.indexOf("banana")
+console.log(target2) // 1
 
 // 문제 7: 모든 요소 문자열로 변환하기(map() 사용)
 // let numbers = [1, 2, 3, 4, 5];  // 결과: ["1", "2", "3", "4", "5"]
+let numbers4 = [1, 2, 3, 4, 5]
+let stringedNumbers = numbers4.map((number) => {
+  return String(number)
+})
+
+console.log(numbers4) //  [1, 2, 3, 4, 5]
+console.log(stringedNumbers) // ['1', '2', '3', '4', '5']
