@@ -64,7 +64,7 @@ let target = inventory.find((fruit) => {
 })
 
 console.log(inventory) // ['apple', 'banana', 'cherry']
-console.log(target) // banana // find()는 조건을 만족하는 요소 자체를 반환해줌(배열로 반환해주지 않음)
+console.log(target) // banana // find()는 조건을 만족하는 첫 번째 요소 자체를 반환해줌(배열로 반환해주지 않음)
 
 let target2 = inventory.indexOf("banana")
 console.log(target2) // 1
