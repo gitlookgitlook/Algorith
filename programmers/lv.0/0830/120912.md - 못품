@@ -27,5 +27,3 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120812
 
 ```
 
-- sort() -> 배열들을 받아서 오름차순(작은 수 -> 큰 수)으로 정리
-- reduce() -> 배열의 중복된 숫자 개수 세기
